@@ -1,6 +1,9 @@
 import os, json
 
-os.remove('result.json')
+try:
+    os.remove('result.json')
+except FileNotFoundError as e:
+    pass
 emotepath = os.listdir('gsf')
 emotepath.sort()
 noext = [x.split('.')[0] for x in emotepath]
