@@ -1,1 +1,1 @@
-# gsf-emotes
+# pidgin-emotes
