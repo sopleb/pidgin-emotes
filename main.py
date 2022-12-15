@@ -4,7 +4,7 @@ try:
     os.remove('result.json')
 except FileNotFoundError as e:
     pass
-emotepath = os.listdir('gsf')
+emotepath = os.listdir('pidgin_nosmile')
 emotepath.sort()
 noext = [x.split('.')[0] for x in emotepath]
 rlist = []
